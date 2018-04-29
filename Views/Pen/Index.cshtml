@@ -1,0 +1,65 @@
+
+@model IEnumerable<CollaText.Models.Pen>
+@{
+    ViewData["Title"] = "Index";
+    Pen pen = (Pen) ViewData["Pen"];
+}
+<div class="container-fluid vertical-center">
+   <h3 class="text-center"> Realtime collaborative text editor </h3>
+   <div class="row"> 
+     <div class="col-md-3">
+        <div class="pen">
+            <a class="" href="#" data-toggle="modal" data-target="#myModal">
+               Create New Pen
+            </a>
+        </div> <br>
+        <div id="Pen">
+            @foreach (var item in Model) {
+                <div class="pen">
+                    <a class="" asp-route-id="@item.ID"> 
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </a>
+                </div>
+            }
+        </div>
+     </div>
+     @if(pen != null) {
+        <div class="col-md-9">
+            <div class="form-group">
+                <div id="title" contenteditable="true" placeholder="Enter title here...">@pen.Title</div>
+                <div id="editor" contenteditable="true" placeholder="Enter content here...">@pen.Content</div>
+            </div>
+        </div> 
+        <input type="hidden" value="@pen.ID" id="penId">
+     }
+     else {
+         <p class="text-center"> Select any pen to start editing... </p>
+     }
+   </div>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Create new pen</h4>
+      </div>
+      <div class="modal-body">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label for="pen">Pen Name</label>
+                <input type="text" name="Title" class="form-control" id="Title" placeholder="Pen">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://js.pusher.com/4.1/pusher.min.js"></script>

@@ -1,0 +1,10 @@
+/Users/dongido/Desktop/CollaText/bin/Debug/netcoreapp2.0/CollaText.deps.json
+/Users/dongido/Desktop/CollaText/bin/Debug/netcoreapp2.0/CollaText.runtimeconfig.json
+/Users/dongido/Desktop/CollaText/bin/Debug/netcoreapp2.0/CollaText.runtimeconfig.dev.json
+/Users/dongido/Desktop/CollaText/bin/Debug/netcoreapp2.0/CollaText.dll
+/Users/dongido/Desktop/CollaText/bin/Debug/netcoreapp2.0/CollaText.pdb
+/Users/dongido/Desktop/CollaText/obj/Debug/netcoreapp2.0/CollaText.csproj.CoreCompileInputs.cache
+/Users/dongido/Desktop/CollaText/obj/Debug/netcoreapp2.0/CollaText.AssemblyInfoInputs.cache
+/Users/dongido/Desktop/CollaText/obj/Debug/netcoreapp2.0/CollaText.AssemblyInfo.cs
+/Users/dongido/Desktop/CollaText/obj/Debug/netcoreapp2.0/CollaText.dll
+/Users/dongido/Desktop/CollaText/obj/Debug/netcoreapp2.0/CollaText.pdb
