@@ -40,7 +40,7 @@ Then,
 
 Build and run the project by pressing Debug (F5).
 
-Finally, Visit http://localhost:5000/Pen to see the project in action.
+Finally, visit http://localhost:5000/Pen to see the project in action.
 
 ## Built With
 
