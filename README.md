@@ -1,6 +1,6 @@
 # How to build an online collaborative text editor using .NET and Pusher
 
-This is a demo application showing how to build a realtime collaborative text editor using ASP.NET Core MVC and Pusher. You can read the tutorial on how it was built [here](https://pusher.com)
+This is a demo application showing how to build a realtime collaborative text editor using ASP.NET Core MVC and Pusher. You can read the tutorial on how it was built [here](https://pusher.com/tutorials/collaborative-text-editor-net)
 
 ## Getting Started
 
